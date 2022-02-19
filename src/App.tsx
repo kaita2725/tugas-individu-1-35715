@@ -39,7 +39,7 @@ const App: React.FC = () => {
     setSplash(true);
     setTimeout(() => {
       setSplash(false);
-    }, 3000)
+    }, 2000)
   }, [])
 
   return (

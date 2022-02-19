@@ -7,10 +7,9 @@ const CG: React.FC = () => {
     <IonGrid>
 
       <IonCard class="cardList">
-        <IonCardHeader class="imagecontainer img1">
+        <IonCardHeader class="img1">
         </IonCardHeader>
         <IonCardContent>
-        <IonText class="icon10"></IonText>
         <IonText class="txt">
           Get Started: Basic Guides
         </IonText>
@@ -22,7 +21,6 @@ const CG: React.FC = () => {
         <IonCardHeader class="img1">
         </IonCardHeader>
         <IonCardContent>
-        <IonText class="icon10"></IonText>
         <IonText class="txt">
           Quick & Easy
         </IonText>
@@ -34,7 +32,6 @@ const CG: React.FC = () => {
         <IonCardHeader class="img1">
         </IonCardHeader>
         <IonCardContent>
-        <IonText class="icon10"></IonText>
         <IonText class="txt">
           Cook in a jar-- No Bag Required!
         </IonText>
@@ -46,7 +43,6 @@ const CG: React.FC = () => {
         <IonCardHeader class="img1">
         </IonCardHeader>
         <IonCardContent>
-        <IonText class="icon10"></IonText>
         <IonText class="txt">
           All the Guides
         </IonText>
@@ -58,7 +54,6 @@ const CG: React.FC = () => {
         <IonCardHeader class="img1">
         </IonCardHeader>
         <IonCardContent>
-        <IonText class="icon10"></IonText>
         <IonText class="txt">
           Joule Ready (Available in the US)
         </IonText>

@@ -1,3 +1,9 @@
+/*
+Image Source:
+https://cdn.pixabay.com/photo/2021/09/26/20/26/indomie-6658817_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/26/09/05/background-689993_960_720.jpg
+*/
+
 .Search{
   display: flex;
   align-items: center;
@@ -8,4 +14,56 @@ ion-button.Cb {
   float:right;
   text-transform: none;
   margin: 0;
+}
+
+.img2{
+  width: 40%;
+  height: 100%;
+  margin:0;
+  padding: 0;
+  float:left;
+  content: url(https://cdn.pixabay.com/photo/2021/09/26/20/26/indomie-6658817_960_720.jpg);
+}
+
+.container{
+  width: 40%;
+  float: left;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+ion-card-header.img3{
+  background-color: #fe674c;
+  position: relative;
+  border-radius: 50%;
+  width:100%;
+  height: auto;
+  margin: 5% 0 5% 0;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  text-align: center;
+}
+
+.img4{
+  width: 40%;
+  height: 100%;
+  margin:0;
+  padding: 0;
+  float:left;
+  content: url(https://cdn.pixabay.com/photo/2015/03/26/09/05/background-689993_960_720.jpg);
+}
+
+.txts1{
+  position: absolute;
+  font-weight: bold;
+  width: 35vw;
+  text-align: left;
+  margin: 5% 0 0 5%;
+  font-size: 3.5vw;
+}
+
+.txts2{
+  position: absolute;
+  margin: 5% 0 0 0;
+  font-size: 2vw;
 }

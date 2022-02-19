@@ -1,19 +1,21 @@
-import { IonContent, IonHeader, IonPage, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage} from '@ionic/react';
 import React from 'react';
-import Searchbar from '../components/Search/Searchbar'
+import Searchbar from '../components/Search/Searchbar';
+import Segment from '../components/Search/Segment';
+import Content from '../components/Search/Content';
 
 const Search: React.FC = () => {
 
   return (
     <IonPage>
-    <Searchbar />
+    <IonHeader>
+      <Searchbar />
+      <Segment />
+    </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
-          <IonToolbar>
-
-          </IonToolbar>
         </IonHeader>
-        heyyyyyyyyy
+        <Content />
       </IonContent>
     </IonPage>
   );
