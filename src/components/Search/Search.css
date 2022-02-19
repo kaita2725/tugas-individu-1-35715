@@ -1,0 +1,11 @@
+.Search{
+  display: flex;
+  align-items: center;
+  margin: 0 5% 0 5%;
+}
+
+ion-button.Cb {
+  float:right;
+  text-transform: none;
+  margin: 0;
+}

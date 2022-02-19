@@ -1,11 +1,7 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import { useParams } from 'react-router';
-import './Page.css';
+import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonToolbar } from '@ionic/react';
+import React from 'react';
 
-const Page: React.FC = () => {
-
-  const { name } = useParams<{ name: string; }>();
-
+const Settings: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -19,13 +15,11 @@ const Page: React.FC = () => {
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">{name}</IonTitle>
           </IonToolbar>
         </IonHeader>
-
+        Settings
       </IonContent>
     </IonPage>
   );
 };
-
-export default Page;
+export default Settings;

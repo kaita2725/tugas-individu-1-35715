@@ -1,16 +1,17 @@
 ion-menu ion-content {
   --background: var(--ion-item-background, var(--ion-background-color, #fff));
+  --overflow: hidden;
 }
 
 ion-menu.md ion-content {
-  --padding-start: 8px;
-  --padding-end: 8px;
-  --padding-top: 20px;
-  --padding-bottom: 20px;
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
 }
 
 ion-menu.md ion-list {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 ion-menu.md ion-note {
@@ -21,11 +22,11 @@ ion-menu.md ion-list-header, ion-menu.md ion-note {
   padding-left: 10px;
 }
 
-ion-menu.md ion-list#inbox-list {
+ion-menu.md ion-list#home-list {
   border-bottom: 1px solid var(--ion-color-step-150, #d7d8da);
 }
 
-ion-menu.md ion-list#inbox-list ion-list-header {
+ion-menu.md ion-list#home-list ion-list-header {
   font-size: 22px;
   font-weight: 600;
   min-height: 20px;
@@ -33,15 +34,13 @@ ion-menu.md ion-list#inbox-list ion-list-header {
 
 ion-menu.md ion-list#labels-list ion-list-header {
   font-size: 16px;
-  margin-bottom: 18px;
+  margin-bottom: 0px;
   color: #757575;
-  min-height: 26px;
 }
 
 ion-menu.md ion-item {
-  --padding-start: 10px;
-  --padding-end: 10px;
-  border-radius: 4px;
+  --padding-start: 18px;
+  --padding-end: 18px;
 }
 
 ion-menu.md ion-item.selected {
@@ -56,7 +55,7 @@ ion-menu.md ion-item ion-icon {
   color: #616e7e;
 }
 
-ion-menu.md ion-item ion-label {
+ion-menu.md ion-item ion--list {
   font-weight: 500;
 }
 
@@ -70,7 +69,7 @@ ion-menu.ios ion-list {
 
 ion-menu.ios ion-note {
   line-height: 24px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 ion-menu.ios ion-item {
@@ -110,4 +109,45 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
-} 
+}
+
+.bg
+{
+  height: 90%;
+  background-color: #fe674c;
+  background-image: url(../../../resources/splash.png);
+  background-size: cover;
+  background-position:top;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.bubble-Text
+{
+  background-color: white;
+  display: block;
+  height: 15%;
+  margin: 5%;
+  padding: 5%;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 125%;
+}
+
+.pointer{
+  background-color: white;
+  height: 5%;
+  width: 12%;
+  margin: 0 auto;
+  transform: rotate(45deg);
+  border-radius: 0 0 5% 0;
+  margin-top: -15%;
+  position: relative;
+  z-index: -1;
+  left: calc(0.5vw - 50px);
+}
+
+.txt-link{
+  color: #fe674c;
+  text-decoration: underline;
+}

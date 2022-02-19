@@ -1,8 +1,14 @@
 import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
-import Menu from './components/Menu';
-import Page from './pages/Page';
+import { useEffect, useState } from 'react'
+import Menu from './components/Menu/Menu';
+import Home from './pages/Home';
+import Search from './pages/Search';
+import TaT from './pages/TaT';
+import HaS from './pages/HaS';
+import Settings from './pages/Settings';
+import SplashScreen from './components/splashScreen/SplashScreen';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -26,17 +32,43 @@ import './theme/variables.css';
 setupIonicReact();
 
 const App: React.FC = () => {
+
+  const [Splash, setSplash] = useState(false);
+
+  useEffect(()=>{
+    setSplash(true);
+    setTimeout(() => {
+      setSplash(false);
+    }, 3000)
+  }, [])
+
   return (
+
     <IonApp>
+      {
+        Splash ? <SplashScreen/> : null
+      }
       <IonReactRouter>
         <IonSplitPane contentId="main">
           <Menu />
           <IonRouterOutlet id="main">
             <Route path="/" exact={true}>
-              <Redirect to="/page/Inbox" />
+              <Redirect to="/Home" />
             </Route>
-            <Route path="/page/:name" exact={true}>
-              <Page />
+            <Route path="/Home" exact={true}>
+              <Home />
+            </Route>
+            <Route path="/Home/Search" exact={true}>
+              <Search />
+            </Route>
+            <Route path="/Tips" exact={true}>
+              <TaT />
+            </Route>
+            <Route path="/Help" exact={true}>
+              <HaS />
+            </Route>
+            <Route path="/Settings" exact={true}>
+              <Settings />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
