@@ -5,6 +5,7 @@ import './Search.css';
 const VdG: React.FC = () => {
 
   return  (
+
     <IonCard class="cardList">
       <IonCardHeader class="img2">
       </IonCardHeader>

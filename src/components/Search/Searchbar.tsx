@@ -3,7 +3,7 @@ import {IonToolbar, IonInput, IonIcon, IonButton} from '@ionic/react';
 import './Search.css';
 import {searchOutline} from 'ionicons/icons';
 
-const Search: React.FC = () => {
+const Searchbar: React.FC = () => {
 
   return  (
     <IonToolbar>
@@ -18,4 +18,4 @@ const Search: React.FC = () => {
     </IonToolbar>
   );
 };
-export default Search;
+export default Searchbar;

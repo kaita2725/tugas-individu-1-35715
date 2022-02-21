@@ -2,11 +2,19 @@ import React from 'react';
 import {IonToolbar, IonSegment, IonSegmentButton} from '@ionic/react';
 import './Search.css';
 
-const Search: React.FC = () => {
+const Segment: React.FC <{
+  selectedValue: 'all'| 'jouleApp' | 'chefSteps';
+  onSelectValue: (value: 'all'| 'jouleApp' | 'chefSteps') => void
+}> = props => {
+
+
+  const inputChangeHandler = (event:CustomEvent) => {
+    props.onSelectValue(event.detail.value);
+  };
 
   return  (
     <IonToolbar>
-      <IonSegment color="dark" onIonChange={c => console.log('Segment selected', c.detail.value)}>
+      <IonSegment color="dark" value={props.selectedValue} onIonChange={inputChangeHandler}>
         <IonSegmentButton  value="all">
           All
         </IonSegmentButton>
@@ -20,4 +28,4 @@ const Search: React.FC = () => {
     </IonToolbar>
   );
 };
-export default Search;
+export default Segment;
