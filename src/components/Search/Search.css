@@ -33,24 +33,34 @@ ion-button.Cb {
 }
 
 ion-card-header.img3{
+  width: 25vw;
+  height: 25vw;
   background-color: #fe674c;
   position: relative;
   border-radius: 50%;
-  width:100%;
-  height: auto;
-  margin: 5% 0 5% 0;
-  padding-top: 25%;
-  padding-bottom: 25%;
+  margin: 5% 0 5% 10%;
+  padding:20% 15% 15% 15%;
   text-align: center;
+  font-size: 4.2vw;
 }
 
-.img4{
+.containerCircle{
   width: 40%;
-  height: 100%;
-  margin:0;
-  padding: 0;
-  float:left;
+  float: left;
+  padding-left:5%; 
+  padding-right:5%;
+}
+
+ion-card-header.img4{
+  width: 29vw;
+  height: 28vw;
+  border-radius:50%;
+  padding: 5%;
+  margin: 0 0 0 6%;
   content: url(https://cdn.pixabay.com/photo/2015/03/26/09/05/background-689993_960_720.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 
 .txts1{

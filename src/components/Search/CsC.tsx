@@ -6,9 +6,11 @@ const JtT: React.FC = () => {
 
   return  (
     <IonCard class="cardList">
-      <IonCardHeader class="img4">
-      </IonCardHeader>
-      <IonCardContent>
+      <div className="containerCircle">
+        <IonCardHeader class="img4">
+        </IonCardHeader>
+      </div>
+        <IonCardContent>
       <IonText class="txts1">
         Roast Duck Fried Noodle <br></br>
         <IonText color="medium" class="txts2">
