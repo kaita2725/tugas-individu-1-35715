@@ -11,7 +11,7 @@ const Searchbar: React.FC = () => {
         <IonInput placeholder="Search" onIonChange={input => console.log('toggle Search', input.detail.value)}>
           <IonIcon icon={searchOutline}></IonIcon>
         </IonInput>
-        <IonButton routerDirection="back" href="/Home" size="small" color="medium" fill="clear" color-activated="none" class="Cb">
+        <IonButton routerDirection="back" routerLink="/Home" size="small" color="medium" fill="clear" color-activated="none" class="Cb">
           Cancel
         </IonButton>
       </div>
